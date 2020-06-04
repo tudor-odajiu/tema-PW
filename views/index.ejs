@@ -1,0 +1,58 @@
+<h1>
+
+    <%if(util){%>
+    Bine ati venit
+        <%=util%>
+
+</h1>
+
+
+<br><br>
+<div class="cinema">
+    <div class="filme">
+        <label for="" class="">Alege filmul și ora</label>
+        <select name="" id="film">
+        <option value="10">Mulan <span class="ora">10:00</span></option>
+        <option value="12">Star Wars <span class="ora">12:00</span></option>
+        <option value="16">The King's Man <span class="ora">16:00</span></option>
+        <option value="20">Wonder Woman 1984  <span class="ora">20:00</span></option>
+     </select>
+    </div>
+</div>
+
+<div class="Informatii">
+    <div class="loc liber"></div>
+    Liber
+    <div class="loc selectat"></div>
+    Selectat
+    <div class="loc ocupat"></div>
+    Ocupat
+</div>
+
+<div class="Sala">
+
+    <div class="randSala">
+        <% for (let i = 1; i <= 5; i++){%>
+        <div class="rand" id="<%=i%>" value="<%=i%>">
+            <div class="NrRand" id="1"></div>
+            <% for (let j = 1; j <= 10; j++) {%>
+                <div class="locul" id="rand<%=i%>_coloana<%=j%>" value="<%=j%>"></div>
+            <%}%>
+        </div>
+        <%}%>
+    </div>
+
+</div>
+<div class="sel">
+    <div class="out">
+        <span> Selectate(Coloana/Rand)</span>
+        <div class="postLoc"></div>
+        <br>
+    </div>
+    <button class="sub" type="submit">Submit</button>
+</div>
+<%}else{%>
+<h1>
+    Nu sunteti autentificat!!!
+</h1>
+<%}%>

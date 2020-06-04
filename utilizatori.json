@@ -1,0 +1,26 @@
+[{
+        "nume": "Odajiu",
+        "prenume": "Tudor",
+        "varsta": "23",
+        "utilizator": "Tudor",
+        "parola": "qaz",
+        "rol": "admin"
+    },
+    {
+        "nume": "Dragos",
+        "prenume": "Luca",
+        "varsta": "15",
+        "utilizator": "Dragos",
+        "parola": "qwerty",
+        "rol": "user"
+    },
+    {
+        "nume": "Horia",
+        "prenume": "Moisoiu",
+        "varsta": "21",
+        "utilizator": "Horia",
+        "parola": "123456",
+        "rol": "user"
+    }
+
+]

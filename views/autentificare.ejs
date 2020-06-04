@@ -1,0 +1,10 @@
+<form action="/verificare-autentificare" method="POST" style="text-align: center;">
+    <% if (mesajEroare) { %>
+        <div style="color: #ff0000">*** Date invalide ***</div>
+        <% } %>
+            <label for="utilizator">Utilizator:</label><br>
+            <input type="text" id="utilizator" name="utilizator"><br>
+            <label for="parola">Parola:</label><br>
+            <input type="text" id="parola" name="parola"><br><br>
+            <input type="submit" value="Autentificare">
+</form>
